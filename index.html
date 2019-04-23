@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet"
+			type="text/css"
+			href="style.css"
+			/>
+		<link rel="stylesheet" type="text/css"
+			href="bootstrap.min.css" />
+		<script src="jquery.js" ></script>
+	</head>
+	<body>
+		<div>&nbsp;</div>
+		<div class="container" >
+			<form
+			class="login tm-login-form"
+			autocomplete="off"
+			method="post"
+			action="#"
+			name="login"
+			>
+				<div class="tasktitle" ></div>
+				<div class="form-group" >
+					<input
+					type="text"
+					placeholder="UserName"
+					class="form-control"
+					autocomplete="off"
+					name="uname"
+					required />
+				</div>
+				<div class="form-group">
+					<input
+					type="password"
+					placeholder="PassWord"
+					class="form-control"
+					autocomplete="off"
+					name="upass"
+					required
+					/>
+				</div>
+				<div class="form-group" >
+					<button
+					id="submit"
+					class="form-control submit"
+					>Submit</button>
+				</div>
+				<div class="form-group" align="right" >
+					<a href="javascript:newuserch()" id="changer" >I am a new user</a>
+				</div>
+			</form>
+			<div>&nbsp;</div>
+			<div class="messenger" >
+				<div class="users">
+					<div class="subtitle" >Users</div>
+					<ul type="none" id="userlist">
+						Loading...
+					</ul>
+				</div>
+				<div class="room" id="room">
+					<div class="backbtn" ><a id="backlist" href="javascript:void(0);">Back</a></div>
+					<div class="subtitle" ></div>
+					<div class="textmessages" ></div>
+				</div>
+			</div>
+		</div>
+		<div class="form-group" >
+			<input type="text"
+			id="sendm"
+			placeholder="Enter your message"
+			class="form-control"
+			/>
+		</div>
+		<div class="form-group" >
+			<button
+			id="sender"
+			class="sendbtn"
+			>Send</button>
+		</div>
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+
+		<script src="bootstrap.min.js" ></script>
+		<script src="script.js"></script>
+	</body>
+</html>
+

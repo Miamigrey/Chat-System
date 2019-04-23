@@ -1,0 +1,192 @@
+html {
+	font-family: sans-serif;
+	--form-width: 70%;
+	--form-height: 80%;
+	--form-back: #FFF;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+body {
+	margin: 0;
+	min-width: 100%;
+	min-height: 100%;
+	font-family: sans-serif;
+	background: #444 !important;
+}
+.container > .login {
+	background: var(--form-back);
+	width: var(--form-width);
+	height: var(--form-height);
+	padding: 5%;
+	position: relative;
+	display: block !important;
+	left: 10%;
+	font-family: sans-serif;
+}
+.container > .newuser {
+	background: var(--form-back);
+	width: var(--form-width);
+	height: var(--form-height);
+	padding: 5%;
+	position: relative;
+	display: block !important;
+	left: 10%;
+	font-family: sans-serif;
+}
+.container .textcont {
+	display: block;
+	width: 70%;
+	height: 50px;
+}
+.container > .login > .tasktitle:before {
+	content: "Login";
+	text-transform: uppercase;
+	color: #444;
+	font-weight: bold;
+	font-size: 2.5em;
+	display: block;
+	text-align: center;
+}
+.container > .newuser > .tasktitle:before {
+	content: "New User";
+	text-transform: uppercase;
+	color: #444;
+	font-weight: bold;
+	font-size: 2.5em;
+	display: block;
+	text-align: center;
+}
+.container .login .submit {
+	background: #1a73e8;
+	color: #FFF;
+	font-weight: bold;
+}
+.container .newuser .submit {
+	background: #de5e5e;
+	color: #FFF;
+	font-weight: bold;
+}
+.messenger {
+	background: var(--form-back);
+	width: var(--form-width);
+	height: var(--form-height);
+	padding: 5%;
+	position: relative;
+	left: 10%;
+	font-family: sans-serif;
+	display:none;
+}
+.messenger > .users > ul {
+	padding-left: 0px;
+}
+.messenger > .users > ul > li {
+	cursor: pointer;
+	color: #428bca;
+	padding: 3%;
+	margin: 3px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-radius: 10px;
+}
+.messenger > .users > ul > li:hover {
+	color: #2a6496;
+	text-decoration: underline;
+	background: rgba(0,0,0,0.1);
+}
+.subtitle {
+	font-size: 2.5em;
+	font-weight: bold;
+	color: #444;
+	text-align: center;
+}
+
+.room {
+	width: 100%;
+	height: 100%;
+}
+sent {
+	display: block;
+	background: #77F;
+	color: #000;
+	margin: 3px;
+	width: 50%;
+	min-height: 40px;
+	border-radius: 30px;
+	padding: 3%;
+	position: relative;
+	left: 50%;
+}
+resc {
+	display: block;
+	background: #F77;
+	color: #000;
+	margin: 3px;
+	width: 50%;
+	min-height: 40px;
+	border-radius: 30px;
+	padding: 3%;
+	position: relative;
+	left: 0;
+}
+sent,resc {
+	word-break:break-all;
+	word-wrap: break-word;
+}
+#sendm {
+	display: none;
+	position: fixed;
+	bottom: 5%;
+	width: 85%;
+	padding: 1%;
+	font-weight: bold;
+	bottom: 1%;
+	left: 1%;
+}
+.sendbtn {
+	position: fixed;
+	right: 1%;
+	width: 9%;
+	bottom: 1%;
+	display: block;
+	height: 34px;
+	background: #1a73e8;
+	border: 0px solid black;
+	border-radius: 5px;
+	font-weight: bold;
+	color: #FFF;
+	display: none;
+}
+.sendbtn:hover {
+	filter: brightness(120%);
+
+}
+.backbtn {
+	display: none;
+}
+@media only screen and (max-width: 500px) {
+	#sendm{
+		width: 75%;
+	}
+	.sendbtn{
+		width: 19%;
+	}
+	.messenger{
+		width: 85%;
+		left: 5%;
+	}
+	.container>.login , .container>.newuser{
+		width: 85%;
+		left: 5%;
+	}
+}
+@media only screen and (max-width: 400px){
+	sent,resc {
+		min-height: 30px;
+	}
+}
+@media only screen and (max-width: 300px) {
+	sent,resc {
+		min-height: 25px;
+	}
+}
